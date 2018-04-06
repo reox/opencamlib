@@ -1,0 +1,34 @@
+Source: opencamlib
+Maintainer: Sebastian Bachmann <hello@reox.at>
+Section: science
+Priority: optional
+Standards-Version: 4.1.3
+Build-Depends: debhelper (>=11.1.6),
+    cmake,
+    python-all,
+    python-dev,
+    libboost-dev,
+    libboost-python-dev,
+    libgomp1,
+    git
+
+Package: opencamlib
+Architecture: all
+Section: science
+Priority: optional
+Depends: ${misc:Depends}, ${shlibs:Depends}, ${python:depends}
+Description: OpenCAMLib is a library for creating toolpaths.
+ A C++ library with python bindings for computer aided manufacturing (CAM)
+ algorithms. Creates toolpaths for numerically controlled (CNC) machine
+ tools such as lathes, mills, and 3D printers.
+
+Package: opencamlib-dev
+Architecture: any
+Section: science
+Priority: optional
+Depends: ${misc:Depends}
+Description: OpenCAMLib is a library for creating toolpaths.
+ Development Headers
+ A C++ library with python bindings for computer aided manufacturing (CAM)
+ algorithms. Creates toolpaths for numerically controlled (CNC) machine
+ tools such as lathes, mills, and 3D printers.
