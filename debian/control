@@ -9,6 +9,7 @@ Build-Depends: debhelper (>=11.1.6),
     python-dev,
     libboost-dev,
     libboost-python-dev,
+    libboost-system-dev,
     libgomp1,
     git
 
